@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #25213b;
+    line-height: 1.6;
+}
+
+header {
+    background: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 3px 15px #0001;
+}
+
+header h2 {
+    color: #8b43e8;
+}
+
+.container {
+    min-height: 85vh;
+    padding: 70px 9%;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #0001;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.btn {
+    display: inline-block;
+    background: #8b43e8;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background: #25213b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+  
+/* Navigation Bar */
+nav {
+    background: linear-gradient(90deg, #4b0082, #6a11cb, #2575fc);
+    padding: 18px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar Links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+nav a:hover {
+    color: #ffd700;
+    transform: translateY(-3px);
+    text-shadow: 0 0 10px #ffd700;
+}
+
+
+    .container {
+        padding: 45px 6%;
+    }
+}
+
+header, nav, .navbar {
+    background: linear-gradient(90deg, #4b0082, #6a11cb, #2575fc) !important;
+}
+
+nav a, .navbar a, header a {
+    color: white !important;
+}
+
+/* Navbar Design */
+nav {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px !important;
+    padding: 20px !important;
+    background: linear-gradient(90deg, #240046, #5a189a) !important;
+}
+
+/* Individual Navbar Boxes */
+nav a {
+    display: inline-block;
+    padding: 12px 20px !important;
+    margin: 0 !important;
+    color: white !important;
+    background: #7b2cbf;
+    border: 1px solid #c77dff;
+    border-radius: 12px;
+    text-decoration: none !important;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+nav a:hover {
+    background: #e0aaff !important;
+    color: #240046 !important;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(224, 170, 255, 0.4);
+}

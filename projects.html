@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preethi | My Projects</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+    background: #100d25;
+    color: white;
+}
+
+.projects-page {
+    min-height: 100vh;
+    padding: 65px 8%;
+    background:
+    radial-gradient(circle at top left,#49227c 0%,transparent 40%),
+    radial-gradient(circle at bottom right,#123d68 0%,transparent 40%),
+    #100d25;
+}
+
+.project-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.project-heading small {
+    color: #ffb86b;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.project-heading h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.project-heading h1 span {
+    color: #d68aff;
+}
+
+.project-heading p {
+    color: #c7bfdc;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+    gap: 28px;
+}
+
+.project-card {
+    padding: 30px;
+    border-radius: 25px;
+    min-height: 330px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px #0006;
+}
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #ffffff15;
+    right: -50px;
+    top: -50px;
+}
+
+.scam {
+    background: linear-gradient(135deg,#ed476d,#8e246e);
+}
+
+.hangman {
+    background: linear-gradient(135deg,#ff9d42,#e84b63);
+}
+
+.student {
+    background: linear-gradient(135deg,#2479dc,#5136b8);
+}
+
+.organizer {
+    background: linear-gradient(135deg,#0cae9b,#176c91);
+}
+
+.project-number {
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.project-icon {
+    font-size: 48px;
+    margin: 18px 0;
+}
+
+.project-card h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    line-height: 1.7;
+    color: #fff;
+    font-size: 14px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.tags span {
+    background: #ffffff25;
+    border: 1px solid #ffffff40;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.project-link {
+    margin-top: auto;
+    padding-top: 22px;
+}
+
+.project-link a {
+    display: inline-block;
+    background: white;
+    color: #27213c;
+    padding: 11px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-link a:hover {
+    background: #ffe1a8;
+    transform: scale(1.05);
+}
+
+.back-home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.back-home a {
+    color: #e2b7ff;
+    text-decoration: none;
+}
+
+@media(max-width:600px) {
+    .project-heading h1 {
+        font-size: 34px;
+    }
+
+    .projects-page {
+        padding: 45px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Preethi.</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="projects-page">
+
+    <div class="project-heading">
+        <small>MY CREATIVE WORK</small>
+        <h1>My <span>Projects</span> 🚀</h1>
+        <p>Turning ideas into real-world solutions through code.</p>
+    </div>
+
+    <div class="project-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card scam">
+
+            <div class="project-number">01 / FEATURED PROJECT</div>
+
+            <div class="project-icon">🛡️</div>
+
+            <h2>ScamShield AI</h2>
+
+            <p>
+                An AI-powered scam awareness project
+                designed to help users identify suspicious
+                online messages and stay safe.
+            </p>
+
+            <p><b>Think Before You Trust. Stay Safe.</b></p>
+
+            <div class="tags">
+                <span>Artificial Intelligence</span>
+                <span>Web Development</span>
+                <span>Security</span>
+            </div>
+
+            <div class="project-link">
+                <a href="https://github.com/sapalapallipreethi-bot/scamshield-ai"
+                target="_blank">View Source Code ↗</a>
+            </div>
+
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card hangman">
+
+            <div class="project-number">02 / PYTHON PROJECT</div>
+
+            <div class="project-icon">🎮</div>
+
+            <h2>Hangman Game</h2>
+
+            <p>
+                An interactive word guessing game
+                developed using Python with input
+                validation and game logic.
+            </p>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>Game Logic</span>
+                <span>Programming</span>
+            </div>
+
+            <div class="project-link">
+                <a href="https://github.com/sapalapallipreethi-bot/Datheon_Python_Internship"
+                target="_blank">View Source Code ↗</a>
+            </div>
+
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card student">
+
+            <div class="project-number">03 / DATABASE PROJECT</div>
+
+            <div class="project-icon">🎓</div>
+
+            <h2>Student Management System</h2>
+
+            <p>
+                A student record management application
+                developed using Java and MySQL.
+            </p>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>MySQL</span>
+                <span>Database</span>
+            </div>
+
+            <div class="project-link">
+                <a href="https://github.com/sapalapallipreethi-bot/student-management-system"
+                target="_blank">View Source Code ↗</a>
+            </div>
+
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card organizer">
+
+            <div class="project-number">04 / AUTOMATION PROJECT</div>
+
+            <div class="project-icon">📁</div>
+
+            <h2>File Organizer</h2>
+
+            <p>
+                A Python automation tool that organizes
+                files into different folders based on
+                their file types.
+            </p>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>Automation</span>
+                <span>File Handling</span>
+            </div>
+
+            <div class="project-link">
+                <a href="https://github.com/sapalapallipreethi-bot/Datheon_Python_Internship"
+                target="_blank">View Source Code ↗</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="back-home">
+        <a href="index.html">← Back to Home</a>
+    </div>
+
+</main>
+
+<footer>
+    © 2026 Preethi | Built with ❤️ and Creativity
+</footer>
+
+</body>
+</html>
